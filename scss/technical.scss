@@ -1,0 +1,87 @@
+
+
+* {
+    font-family: "Open Sans", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+p {
+    color:#4d4e53;
+}
+
+nav {
+    text-align: center;
+    .nav {
+        border: 2px solid black;
+        height: 12rem;
+        overflow-y: scroll;
+        a {
+            display: block;
+            border-bottom: 1px solid black;
+            padding-left: 20px;
+            width: 100%;
+            height: 3rem;
+            color: #4d4e53;
+            line-height: 3rem;
+            text-align: left;
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    padding: 20px;
+    article {
+        margin: 15px;
+    }
+    ul {
+        padding-left: 20px;
+        li {
+            margin-top: 10px;
+            color: #4d4e53;
+        }
+    }
+    code {
+        display: block;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 5px;
+        white-space: pre;
+        background-color: #F7F7F7;
+        font-family: monospace;
+        font-size: 13px;
+    }
+}
+
+
+// 螢幕寬度760以上
+@media screen and (min-width: 760px){
+    nav {
+        position: fixed;
+        left: 0;
+        border-right: 3px solid #99A1A1;
+        width: 300px;
+        height: 100vw;
+        .nav {
+            height: auto;
+            overflow: auto;
+            border-right: none;
+        }
+    }
+    main {
+        margin-left: 310px;
+        padding-top: 0;
+    }
+    #Introduction {
+        header {
+            margin-top: 0;
+            padding-top: 20px;
+        }
+    }
+}
+
